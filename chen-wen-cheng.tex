@@ -1,0 +1,147 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 3.0 (December 17, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	11pt, % Default font size, can use 10pt, 11pt or 12pt
+]{resume} % Use the resume class
+
+\usepackage{ebgaramond} % Use the EB Garamond font
+\usepackage{hyperref}
+
+\newenvironment{myitemize}
+  {\begin{itemize}
+    \setlength{\itemsep}{-0.5em} \vspace{-0.5em}
+  } % Reduce vertical spacing between items in the list for a tighter look
+  {\end{itemize}}
+
+%------------------------------------------------
+
+\name{Chen Wen-Cheng} % Your name to appear at the top
+
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
+
+% \address{iaiminwtg@gmail.com} % Contact information
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	CONTACT INFO SECTION
+%----------------------------------------------------------------------------------------
+%
+email: \href{mailto:iaiminwtg@gmail.com}{iaiminwtg@gmail.com}, Blog: \href{https://blog.errorbaker.tw/posts/cwc329}{https://blog.errorbaker.tw/posts/cwc329} \\
+LinkedIn: \href{https://www.linkedin.com/in/wenchengchen715161143}{wenchengchen715161143}, GitHub: \href{https://github.com/cwc329}{cwc329}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Objective}
+    Experienced backend engineer with a strong ability to deliver functional and scalable solutions, having successfully implemented over 10 product features, with at least half completed independently.
+    Proven track record of optimizing CI/CD processes, implementing efficient deployment strategies, and enhancing development environments.
+    Seeking a senior backend engineer position to leverage expertise in database design, RESTful API implementation, CI/CD workflows, and Kubernetes management.
+\end{rSection}
+
+\begin{rSection}{Experience}
+
+  I’ve been instrumental in \textbf{optimizing relational database schemas} and \textbf{implementing RESTful APIs} for two B2B SaaS products, collectively catering to hundreds of daily users.
+  My contributions extend to spearheading \textbf{CI/CD workflows}, ensuring efficient \textbf{infrastructure management}, and overseeing the \textbf{effective maintenance of our Kubernetes infrastructure}.
+
+	\begin{rSubsection}{PIMQ}{2021-02 - 2024-06}{Software Engineer}{Taipei, Taiwan}
+    \item Backend Product Features Achievements:
+    \begin{myitemize}
+      \item Participated in \textbf{more than 10} feature implementation. 
+      \item textbf{Independently} developed over \textbf{5 features}. Including:
+      \begin{myitemize}
+        \item Energy menagement system.
+        \item Electricity comsumption and billing management system.
+      \end{myitemize}
+    \end{myitemize}
+    \item CI/CD Optimization:
+    \begin{myitemize}
+      \item Reduced test coverage execution time by \textbf{25\%} through the implementation of a report cache.
+      \item \textbf{Saved 80\% of CI/CD cost} by using on-demand runners.
+      \item Achieved an \textbf{80\% reduction} in test site deployment time by leveraging AWS launch templates.
+    \end{myitemize}
+    \item Development Efficiency:
+    \begin{myitemize}
+      \item Introduced a development environment setup runbook, resulting in a \textbf{50\% time savings} for onboarding.
+    \end{myitemize}
+    \item Infrastructure and Monitoring:
+    \begin{myitemize}
+      \item Implemented container insight into EKS for effective monitoring of application logs.
+      \item Leveraged AWS DynamoDB to simplify and streamline customized configuration deployment procedures.
+    \end{myitemize}
+    \item Collaborative Team Player:
+    \begin{myitemize}
+      \item Collaborated with colleagues to successfully \textbf{upgrade Kubernetes from 1.17 to 1.27} in EKS.
+      \item \textbf{Led} the upgrade of the company’s MySQL from version \textbf{5.7 to 8 without downtime}.
+    \end{myitemize}
+  \end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
+    Programming Languages:& Javascript, Shell scripts \\
+    Database Technologies:& MySQL, Redis, DynamoDB \\
+    Cloud Platforms:& AWS (EC2, DynamoDB, EKS) \\
+    Containerization:& Docker, Kubernetes \\
+    IaC Tools:& AWS CDK, Terraform \\
+    CI/CD Tools:& GitHub actions \\
+	\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+	
+	\textbf{National Taiwan University, Taipei} \hfill \textit{June 2015} \\ 
+	B.A. in Philosophy
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
