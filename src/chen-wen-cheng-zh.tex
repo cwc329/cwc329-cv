@@ -1,0 +1,134 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 3.0 (December 17, 2022)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	11pt,
+]{resume}
+
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{hyperref}
+\setCJKmainfont{Songti TC}
+
+\newenvironment{myitemize}
+  {\begin{itemize}
+    \setlength{\itemsep}{-0.5em} \vspace{-0.5em}
+  }
+  {\end{itemize}}
+
+%------------------------------------------------
+
+\name{陳溫成}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	CONTACT INFO SECTION
+%----------------------------------------------------------------------------------------
+%
+email: \href{mailto:iaiminwtg@gmail.com}{iaiminwtg@gmail.com}, blog: \href{https://blog.errorbaker.tw/posts/cwc329}{https://blog.errorbaker.tw/posts/cwc329} \\
+LinkedIn: \href{https://www.linkedin.com/in/wenchengchen715161143}{wenchengchen715161143}, GitHub: \href{https://github.com/cwc329}{cwc329}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{自我介紹}
+    我是具產品思維的後端工程師，能將產品目標轉化為可衡量的工程成果，擅長透過 AI 工具提升開發效率，交付可維護、可擴展的程式碼。
+    除了後端開發，我也有 CI/CD 優化、零停機升級、生產環境穩定性提升、第三方 API 整合、單元測試等經驗。我也有開發前端經驗，使用 React.js 以及 plain HTML/CSS/JavaScript。
+    期望在具使命感的產品團隊發揮我的能力，與有相同願景的夥伴，打造具有影響力的產品。
+\end{rSection}
+
+\begin{rSection}{工作經歷}
+
+	\begin{rSubsection}{OakMega}{2025-02 - 至今}{後端工程師}{台北，台灣}
+    \item Facebook 與 Instagram 留言回覆機器人：
+    \begin{myitemize}
+      \item 在前期研究與 POC 階段，反覆驗證文字、圖片、Reels 與不同貼文型態的支援範圍；確認可行性後，獨立完成後續開發、上線與維運流程。
+      \item 主動推進 Meta 應用審查準備，包含取得權限、分析過往送審內容，並建立可重複使用的內部流程文件，支援後續權限申請。
+      \item 使用 Cursor 搭配專案 rules 與 skills 依既定 API 規格開發，將開發時間縮短 \textbf{50\%}，同時維持與既有程式風格一致。
+    \end{myitemize}
+    \item LINE OA 新舊好友分流連結：
+    \begin{myitemize}
+      \item 建置新舊好友分流流程，用於行銷歸因與差異化訊息推送，支援會員成長情境。
+      \item 透過有條件延後檢查邏輯，解決 LINE Login redirect 與加好友 webhook 事件的時序競爭問題；在可接受的邊界情境下（約 \textasciitilde5 秒延遲）提升標記準確度。
+    \end{myitemize}
+    \item 客服中心升級：
+    \begin{myitemize}
+      \item 擴充客服中心的 Meta 訊息型態支援，服務 60 家客戶，包含 60,000 個 Facebook/Instagram 會員對話。
+      \item 主導限時動態提及與回覆能力盤點，使客服可在 CRM 介面中識別上下文並直接開啟原始動態連結。
+    \end{myitemize}
+    \item 客服中心批次傳訊：
+    \begin{myitemize}
+      \item 回應客戶需求，實作客服中心批次傳訊功能，提供使用者比發文更簡便的批量傳訊方式。
+      \item 考量客服中心與發文在即時性需求的差異，在流量與延遲評估後，設定每批 200 人上限以控制系統負載。
+    \end{myitemize}
+  \end{rSubsection}
+
+	\begin{rSubsection}{PIMQ}{2021-02 - 2024-06}{軟體工程師}{台北，台灣}
+    \item CI/CD 優化：
+    \begin{myitemize}
+      \item 透過導入快取，將測試覆蓋執行時間降低 \textbf{25\%}。
+      \item 以 on-demand runners，\textbf{節省 80\% CI/CD 成本}。
+      \item 運用 AWS launch templates，使測試站部署時間 \textbf{降低 80\%}。
+    \end{myitemize}
+    \item 工程品質與交付流程：
+    \begin{myitemize}
+      \item 進行 peer code review，重點關注可讀性、可維護性、業務邏輯清晰度與功能連動正確性。
+      \item 先定義單元測試目標與測項，再於開發過程補齊 edge case 測試，提升發布信心。
+      \item 建立開發環境建置 runbook，使新人成本降低並達成 \textbf{50\% 更快 onboarding setup}，同時提升開發流程一致性。
+    \end{myitemize}
+    \item 穩定性與平台升級：
+    \begin{myitemize}
+      \item 與團隊協作完成 EKS 從 \textbf{1.17 升級至 1.27}。
+      \item \textbf{主導}公司 MySQL 從 \textbf{5.7 升級至 8 且全程零停機}。
+    \end{myitemize}
+    \item 產品功能交付：
+    \begin{myitemize}
+      \item 累計交付 \textbf{超過 10} 項功能實作。
+      \item \textbf{獨立}開發超過 \textbf{5} 項功能，包含能源管理系統與用電計費管理系統。
+    \end{myitemize}
+  \end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{技術能力}
+
+	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
+    程式語言:& Python, Javascript, Shell scripts \\
+    資料庫技術:& MySQL, Redis, DynamoDB \\
+    雲端平台:& GCP, AWS (EC2, DynamoDB, EKS) \\
+    容器化技術:& Docker, Kubernetes \\
+    基礎設施即程式碼:& AWS CDK, Terraform \\
+    CI/CD 工具:& GitHub Actions \\
+	\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{學歷}
+	
+	\textbf{國立臺灣大學，台北} \hfill \textit{2015 年 6 月} \\ 
+	哲學學士
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
