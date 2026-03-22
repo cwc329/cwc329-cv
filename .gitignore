@@ -1,1 +1,11 @@
-out
+# 預設忽略全部；僅追蹤下列路徑
+# （勿使用「忽略整個 out/」——否則無法還原其中的 PDF）
+*
+!*/
+!src/
+!src/**
+!out/
+!out/**/*.pdf
+!.vscode/
+!.vscode/**
+!.gitignore
